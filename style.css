@@ -62,12 +62,12 @@ header {
   padding-bottom: 1%;
 }
 header img {
-  width: 23vw;
+  width: 28vw;
   position: relative;
   bottom: 55px;
   right: 45%;
   padding-bottom: 2%;
-  border-radius: 30%;
+  border-radius: 50%;
 }
 header h3, header h4 {
   width: 16vw;
@@ -205,8 +205,8 @@ p, ul, li {
   header img {
     bottom: 80%;
     width: 60vw;
-    height: 130%;
-    border-radius: 40%;
+    height: 128%;
+    border-radius: 50%;
     margin-left: 10%;
   }
   header h3 {

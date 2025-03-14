@@ -5,8 +5,7 @@ body{
   margin: 0;
   padding:0;
   list-style: none;
-  background-color: bisque;
-
+  background-color: $colordeFondo;
 }
 h1{
   font-family: C059;
@@ -57,7 +56,7 @@ h1{
     }
   }
 }
-//Se le añade el mixins de bordes para ajustarlo adecuadamente
+///Se le añade el mixins de bordes para ajustarlo adecuadamente
 #about{
   @include mixins.bordes
 }
@@ -72,12 +71,13 @@ header {
   padding: 25%;
   padding-bottom: 1%;
   img {
-    width: 23vw;
+    width: 28vw;
     position: relative;
     bottom: 55px;
     right: 45%;
     padding-bottom: 2%;
-    border-radius: 30%;
+    ///Radio que le damos a la foto para que quede mas circular
+    border-radius: 50%;
   }
   h3,h4{
     width: 16vw;
@@ -106,7 +106,7 @@ header {
 
 }
 
-//Este scroll sirve para cuando le demos a una opcion del menú no se coma una parte de la opcion que has señalado
+///Este scroll sirve para cuando le demos a una opcion del menú no se coma una parte de la opcion que has señalado
 #container > div{
   scroll-margin-top: 360px;
 }
@@ -118,7 +118,7 @@ header {
 
   }
 }
-//Le ponemos el mixins para ajustarlo al lateral izquierdo
+///Le ponemos el mixins para ajustarlo al lateral izquierdo
 #wrapper{
   @include mixins.espacioLateralIzquierdo;
   margin-top: 75%;
@@ -129,7 +129,7 @@ h1{
   @include mixins.estiloH1;
   color: $colorVerdeh1;
 }
-
+///Ajustamos el apartado de educacion
 #education{
   div{
   @include mixins.bordes
@@ -143,17 +143,19 @@ h1{
   }
 }
 
-//Ajustamos los iconos
+///Ajustamos los iconos
 #Email {
-  text-align: center;
-  img{
+  @include mixins.centrarTexto;
+    img{
     width: 20%;
 
   }
 }
 #conte {
- display: flex;
-  text-align: center;
+  display: flex;
+  @include mixins.centrarTexto;
+
+
 }
 #github  {
   img{
@@ -166,7 +168,7 @@ h1{
   }
 
 }
-
+///Alienamos la imagen y texto
 #contacto {
 @include mixins.alienarImagenyTexto
 }
@@ -177,7 +179,7 @@ h1{
   }
 }
 
-//Le damos la anchura y la altura a los iconos
+///Le damos la anchura y la altura a los iconos
 #Email img, #github img, #LinkedIn img {
   width: 50px;
   height: auto;
@@ -207,7 +209,7 @@ p,ul,li,{
   margin: 20px 0;
 }
 
-//Responsivo para table
+///Responsivo para table
 @media (min-width: 600px){
   #container > div{
     scroll-margin-top: 360px;
@@ -223,8 +225,8 @@ p,ul,li,{
   img{
     bottom: 80%;
     width: 60vw;
-    height: 130%;
-    border-radius: 40%;
+    height: 128%;
+    border-radius: 50%;
     margin-left: 10%;
   }
   h3{
@@ -241,12 +243,13 @@ p,ul,li,{
 }
 }
 
-//Responsivo para odenador
+///Responsivo para odenador
 @media (min-width: 1000px){
   #container > div{
     scroll-margin-top: 360px;
   }
  #wrapper{
+   ///Movemos el wrapper para la derecha un 50%
    margin-left: 50%;
    width: 40%;
    margin-top: 0;
@@ -266,7 +269,9 @@ p,ul,li,{
       flex-direction: column;
       gap: 80px;
       width: 100%;
-    li:hover{
+
+      li:hover{
+        ///Cada vez que se ponga el cursor encima aparecera en azul
     background-color: #48aacc;
   }
       li{
@@ -310,7 +315,7 @@ p,ul,li,{
   }
 }
 
-//Responsivo para pantalla completa
+///Responsivo para pantalla completa
 @media (min-width: 1100px){
   #wrapper{
     margin-left: 40%;
@@ -326,10 +331,12 @@ p,ul,li,{
 #nav{
 
   ul{
-    word-spacing: normal; // Espaciado entre palabras
+    ///Espaciado entre palabras
+    word-spacing: normal;
     a:hover{
       border-radius: 5px;
-      transition: all 0.4s ease-in-out; // Transición suave
+      ///Transición suave
+      transition: all 0.4s ease-in-out;
 
       transform: scale(1.3);
     }

@@ -1,4 +1,4 @@
-//Le añadimos estilo a los h1
+///Le añadimos estilo a los h1
 @mixin estiloH1{
     font-size: 10vw;
     font-weight: bold;
@@ -7,13 +7,13 @@
 
 };
 @mixin centrarTexto{
-  text-align: center;
+  text-align: center;///Mixin para centrar texto
 }
 
 @mixin espacioLateralIzquierdo{
   margin: 5%;
 };
-//Este minxin sirve para poder darle estilo a la imagen
+///Este minxin sirve para poder darle estilo a la imagen
 @mixin alienarImagenyTexto{
   display: flex;
   justify-content: center;
@@ -21,6 +21,7 @@
   flex-direction: column;
   text-align: center;
 };
+///Borde de cada apartado
 @mixin bordes{
   border-bottom: 3px solid gray;
 
