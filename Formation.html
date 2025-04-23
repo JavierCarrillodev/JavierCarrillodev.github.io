@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Software Developer</title>
+    <link href="bootstrap-5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            width: 300px;
+            background-color: #343a40;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        .sidebar a:hover {
+            background-color: #656262;
+            color: #12e8ee;
+            transition: all 0.3s ease;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+        .section-title {
+            font-size: 1.2rem;
+        }
+        .content-list {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+<header class="bg-info text-white text-center py-4">
+    <h1 class="fw-bold" style="margin-right:10%">FORMATION</h1>
+</header>
+<div class="text-end d-block d-md-none px-3 py-2">
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuResponsive">
+        <i class="bi bi-list fs-3"></i>
+    </button>
+</div>
+<div class="container py-5" style="margin-left:20%; width: 50%">
+    <h2 class="text-center fw-bold mb-5">My Formation</h2>
+
+    <div class="bg-primary text-white px-4 py-3 fw-semibold section-title rounded-top">
+        Técnico en Sistemas Microinformáticos y Redes
+    </div>
+    <div class="bg-secondary-subtle px-4 py-4 rounded-bottom">
+        <ul class="mb-0 content-list">
+            <li>Ciclo Formativo Grado Medio Técnico en Sistemas Microinformáticos y Redes</li>
+            <li>2023-2024</li>
+            <li>IES Antonio Gala – Palma del Río</li>
+        </ul>
+    </div>
+
+    <div class="bg-primary text-white px-4 py-3 fw-semibold section-title rounded-top mt-4">
+        Técnico Superior en Desarrollo de Aplicaciones
+    </div>
+    <div class="bg-secondary-subtle px-4 py-4 rounded-bottom">
+        <ul class="mb-0 content-list">
+            <li>Ciclo Formativo Grado Superior Técnico Superior en Desarrollo de Aplicaciones</li>
+            <li>2025-2026</li>
+            <li>IES Antonio Gala – Palma del Río</li>
+        </ul>
+    </div>
+</div>
+
+<div class="sidebar text-center d-none d-md-block" style="height: 100vh;">
+    <div class="centrarMenu d-flex flex-column justify-content-between" style="height: 90%;">
+        <img src="./Imagenes/yo.png" class="rounded-circle img-fluid" alt="Profile Picture" style="width: 150px; margin-top: 5%; margin-left: 25%">
+        <h5><a href="./Practica2.html">HOME</a></h5>
+        <h5><a href="./Formation.html">FORMATION</a></h5>
+        <h5><a href="./Technologie.html">TECHNOLOGIES</a></h5>
+        <h5><a href="./Experiencia.html">EXPERIENCE</a></h5>
+    </div>
+</div>
+<div class="offcanvas offcanvas-end d-block d-md-none" tabindex="-1" id="menuResponsive" aria-labelledby="menuResponsiveLabel">
+    <div class="offcanvas-header bg-info position-relative">
+    </div>
+    <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center gap-4 text-center">
+        <img src="./Imagenes/yo.png" class="rounded-circle img-fluid mb-3" alt="Profile Picture" style="width: 150px;">
+        <h5><a href="./Practica2.html" class="text-dark text-decoration-none">HOME</a></h5>
+        <h5><a href="./Formation.html" class="text-dark text-decoration-none">FORMATION</a></h5>
+        <h5><a href="./Technologie.html" class="text-dark text-decoration-none">TECHNOLOGIES</a></h5>
+        <h5><a href="./Experiencia.html" class="text-dark text-decoration-none">EXPERIENCE</a></h5>
+    </div>
+</div>
+
+<footer class="text-center bg-warning text-dark py-4 mt-auto ">
+    <div style="margin-right: 13%">
+        <h3 class="fw-bold">CONTACT ME</h3>
+        <div class="d-flex justify-content-center gap-4 mt-3">
+            <a href="https://mail.google.com/mail/u/0/#inbox" class="text-dark fs-1"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://github.com/JavierCarrillodev" class="text-dark fs-1"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/feed/" class="text-dark fs-1"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="../bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
