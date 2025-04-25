@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d5cded4-ebfa-4473-af7d-cb8e10fd9754" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiencia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Experiencia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formation.html" beforeDir="false" afterPath="$PROJECT_DIR$/Formation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Technologie.html" beforeDir="false" afterPath="$PROJECT_DIR$/Technologie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
-    </list>
+    <list default="true" id="4d5cded4-ebfa-4473-af7d-cb8e10fd9754" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +57,7 @@
       <workItem from="1745396135398" duration="9852000" />
       <workItem from="1745436359466" duration="1228000" />
       <workItem from="1745440540422" duration="1875000" />
-      <workItem from="1745568229001" duration="1973000" />
+      <workItem from="1745568229001" duration="2198000" />
     </task>
     <servers />
   </component>
