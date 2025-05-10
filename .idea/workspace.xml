@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbd4dd89-5481-4418-9083-16eb0b413598" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secciones/HOME.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BOSTRAP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BOSTRAP/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FECH/Curriculum con Fetch/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FECH/Curriculum con Fetch/secciones/HOME.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2wr9FivZWaBiN2fBlPSvFbi2DcX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,6 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript Debug.HOME.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Node.js.main.js.executor": "Run",
@@ -69,6 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746788724449</updated>
       <workItem from="1746788726651" duration="6658000" />
+      <workItem from="1746885114973" duration="1601000" />
     </task>
     <servers />
   </component>
