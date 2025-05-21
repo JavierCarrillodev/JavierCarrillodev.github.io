@@ -14,14 +14,16 @@
 <header class="bg-success text-white text-center py-4">
     <h1 class="fw-bold" style="margin-right:10%">Software Developer</h1>
 </header>
+<div id="contenido-html" class="container mt-5">
+    <!-- El contenido se carga aquí con fetch -->
+</div>
+<!-- NAVEGACIÓN -->
 <div class="text-end d-block d-md-none px-3 py-2">
     <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuResponsive">
         <i class="bi bi-list fs-3"></i>
     </button>
 </div>
-<div id="contenido-html" class="container mt-5">
-    <!-- El contenido se carga aquí con fetch -->
-</div>
+
 
 <!-- SIDEBAR PARA NAVEGAR -->
 <div class="sidebar text-center d-none d-md-block" style="height: 100vh;">
@@ -36,6 +38,9 @@
 
 <!-- MENÚ RESPONSIVO -->
 <div class="offcanvas offcanvas-end d-block d-md-none" tabindex="-1" id="menuResponsive" aria-labelledby="menuResponsiveLabel">
+    <div class="offcanvas-header bg-success position-relative">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
 
     <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center gap-5 text-center" style="margin-top: 10%">
         <img src="./Imagenes/yo.png" class="rounded-circle img-fluid mb-3" alt="Profile Picture" style="width: 150px;">
