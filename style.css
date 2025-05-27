@@ -221,14 +221,16 @@
     object-fit: cover;   /* para que el video se ajuste sin deformarse */
 }
 .video-half3 {
-    width: 100%;          /* Ocupa todo el ancho del contenedor (col-md-6) */
-    height: auto;         /* Mantiene la proporción original */
-    border-radius: 8px;   /* Opcional, para bordes suaves */
-    object-fit: cover;    /* Para que el video llene su contenedor y recorte si es necesario */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
     max-height: 350px;
-    /* Limita la altura para que no sea demasiado grande (ajústalo según necesidad) */
+    display: block;
 
 }
+
 
 .seccion1-1{
     background-color: #454d3b;
