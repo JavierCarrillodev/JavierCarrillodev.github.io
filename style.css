@@ -231,10 +231,6 @@
 
 }
 @media (max-width: 576px) {
-    .col-md-6 {
-        padding-right: 0;
-        padding-left: 0;
-    }
 
     .video-half3 {
         max-height: 200px;
@@ -347,11 +343,16 @@
     transform: scale(1.20);
     color: #ffc107; /* Opcional: cambia de color al hacer hover */
 }
+.seccion3-1 .titulo h1 {
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
 .vermas h2{
     color: #ffc107;
 
 }
-vermas a{
+.vermas a{
     transition: transform 0.3s ease, color 0.3s ease;
 }
 .vermas a:hover{
@@ -397,8 +398,8 @@ vermas a{
 /* Responsivo */
 @media (max-width: 768px) {
     .carrusel-foto {
-        max-width: 80%;
-        height: 30%;
+        max-width: 90%;
+        height: 23%;
         margin: 20px auto;
     }
     .carrusel-foto .carousel-control-prev,
@@ -413,6 +414,7 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 
 
 
