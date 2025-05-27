@@ -1,48 +1,403 @@
-.sidebar {
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  width: 300px;
-  background-color: #343a40;
-  padding-top: 20px;
+.video-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.sidebar a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  font-size: 1.2rem;
+.video-half {
+    width: 50%;
+    object-fit: cover;
+    height: 100vh;
 }
 
-.sidebar a:hover {
-  background-color: #656262;
-  color: #12e8ee;
-  transition: all 0.3s ease;
+.hero-overlay {
+    position: relative;
+    z-index: 1;
+    padding: 120px 0 80px;
+    text-align: center;
+    color: white;
 }
 
-h2 {
-  font-size: 2.2rem;
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    backdrop-filter: blur(6px);
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.section-title {
-  font-size: 1.2rem;
+.navbar .navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #ffc107 !important;
+    letter-spacing: 1px;
 }
 
-.content-list {
-  font-size: 1.2rem;
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1.5px;
+
+
 }
 
-.transition {
-  transition: all 0.3s ease;
-}
-.transition footer {
-  margin-top: auto;
-}
-.transition:hover {
-  transform: translateX(5px);
-  border-radius: 2vw;
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #ffc107;
+    transition: width 0.3s;
+    margin: auto;
 }
 
-/*# sourceMappingURL=style.css.map */
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 60%;
+}
+
+/* Fondo oscuro para el navbar */
+.navbar-dark.bg-dark {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(5px);
+}
+.navbar-nav .nav-link {
+    color: black;
+    text-transform: uppercase;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background: linear-gradient(135deg, rgba(255, 105, 180, 0.85), rgba(255, 69, 0, 0.85)); /* degradado rosa a naranja */
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1.2px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.overlay-text:hover {
+    background: linear-gradient(135deg, rgba(255, 69, 0, 0.95), rgba(255, 105, 180, 0.95));
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.85);
+    transform: translateX(-50%) scale(1.1);
+
+}
+.fotografia-videos-section {
+    background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+}
+
+
+
+.fotografia-videos-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #ffc107;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.fotografia-videos-section h2:hover {
+    transform: scale(1.20);
+    color: #ffc107; /* Opcional: cambia de color al hacer hover */
+}
+
+.fotografia-videos-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+
+}
+.seccion3{
+    background-color: #365354;
+
+}
+.seccion3 h2{
+    color: #ffc107;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.seccion3 h2:hover{
+    transform: scale(1.20);
+    color: #ffc107; /* Opcional: cambia de color al hacer hover */
+
+}
+.seccion3 h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #ffc107;
+
+}
+.zoom-img {
+    transition: transform 0.4s ease;
+}
+
+.zoom-img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+
+.zoom-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+}
+
+.seccion4{
+    background-color: #454d3b;
+}
+.seccion4 h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #ffc107;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.seccion4 h2:hover {
+    transform: scale(1.20);
+    color: #ffc107; /* Opcional: cambia de color al hacer hover */
+
+}
+.seccion4 p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.seccion4 p > strong {
+    color: #ffffff;
+}
+.seccion4 .contactanos-btn {
+    margin-top: 20px;
+}
+
+.contactanos-btn {
+    background: linear-gradient(135deg, #3a3a3a, #000000);
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.contactanos-btn:hover {
+    background: linear-gradient(135deg, #4b3754, #2e4949);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+/*PAGINA DE VIDEO */
+
+.video-container2 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-half2 {
+    position: absolute;  /* para que podamos controlar su tamaño y posición */
+    top: 0;
+    left: 0;
+    width: 100vw;        /* ocupa todo el ancho */
+    height: 100vh;       /* ocupa toda la altura */
+    object-fit: cover;   /* para que el video se ajuste sin deformarse */
+}
+.video-half3 {
+    width: 100%;          /* Ocupa todo el ancho del contenedor (col-md-6) */
+    height: auto;         /* Mantiene la proporción original */
+    border-radius: 8px;   /* Opcional, para bordes suaves */
+    object-fit: cover;    /* Para que el video llene su contenedor y recorte si es necesario */
+    max-height: 350px;
+    /* Limita la altura para que no sea demasiado grande (ajústalo según necesidad) */
+
+}
+
+.seccion1-1{
+    background-color: #454d3b;
+}
+.seccion1-1 h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #ffc107;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.seccion1-1 h2:hover {
+    transform: scale(1.20);
+    color: #ffc107; /* Opcional: cambia de color al hacer hover */
+
+}
+.seccion1-1 p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.seccion1-1 p > strong {
+    color: #ffffff;
+}
+.seccion1-1 .contactanos-btn {
+    margin-top: 20px;
+}
+
+
+.carrusel {
+    width: 800px;         /* Ancho fijo, ajusta a lo que quieras */
+    height: 400px;        /* Igual que ancho para que sea cuadrado */
+    margin: 40px auto;    /* Márgenes arriba y abajo (40px), y auto centrar horizontalmente */
+    border: 2px solid #ccc; /* Opcional: borde para que se note */
+    border-radius: 8px;     /* Opcional: bordes redondeados */
+    overflow: hidden;       /* Oculta contenido que sobresalga */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra sutil */
+    position: relative;     /* Para posicionar elementos dentro */
+    background: #000;       /* Fondo negro para videos */
+}
+.carrusel video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre todo el contenedor manteniendo proporción */
+    display: block;
+}
+
+
+
+
+/* Carrusel de videos responsive */
+.carrusel-video {
+    width: 1000px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.carrusel-video video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Centrar flechas */
+.carrusel-video .carousel-control-prev,
+.carrusel-video .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+}
+
+.carrusel-video .carousel-control-prev-icon,
+.carrusel-video .carousel-control-next-icon {
+    background-size: 40px 40px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .carrusel-video {
+        width: 90%;
+    }
+
+    .carrusel-video .carousel-control-prev,
+    .carrusel-video .carousel-control-next {
+        width: 10%;
+    }
+}
+
+.seccion3-1 {
+    background-color: #365354;
+}
+.seccion3-1 h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #ffc107;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.seccion3-1 h1:hover {
+    transform: scale(1.20);
+    color: #ffc107; /* Opcional: cambia de color al hacer hover */
+}
+.vermas h2{
+    color: #ffc107;
+
+}
+vermas a{
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.vermas a:hover{
+    transform: scale(1.08);
+    background-color: #333f2a;
+}
+
+/* PAGINA DE FOTOGRAFÍA */
+
+.carrusel-foto {
+    width: 100%;
+    max-width: 1100px; /* ancho máximo más grande */
+    height: 600px; /* más alto */
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-foto-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.carousel-foto-inner img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.carrusel-foto .carousel-control-prev,
+.carrusel-foto .carousel-control-next {
+    top: 40%;
+    transform: translateY(-50%);
+    width: 5%; /* Opcional: ajustar ancho para que no sean muy grandes */
+    height: auto;
+}
+.carrusel-foto .carousel-control-prev-icon,
+.carrusel-foto .carousel-control-next-icon {
+    background-size: 40px 40px;
+}
+/* Responsivo */
+@media (max-width: 768px) {
+    .carrusel-foto {
+        max-width: 80%;
+        height: 30%;
+        margin: 20px auto;
+    }
+    .carrusel-foto .carousel-control-prev,
+    .carrusel-foto .carousel-control-next {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 7%; /* Opcional: ajustar ancho para que no sean muy grandes */
+        height: 10%;
+    }
+}
+
+
+
+
